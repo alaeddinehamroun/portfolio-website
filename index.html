@@ -9,8 +9,8 @@
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -107,7 +107,7 @@
                         <p class="home__description">
                             1st year student in Software engineering at INSAT.
                         </p>
-                        <a href="#contact" class="button button--flex">
+                        <a href="#contact" class="button button--flex horiz__button">
                             Contact Me<i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
@@ -157,7 +157,8 @@
                     </div>
                     -->
                     <div class="about__buttons">
-                        <a download="" href="assets/pdf/HamrounAlaeddine-Cv.pdf" class="button button--flex">
+                        <a download="" href="assets/pdf/HamrounAlaeddine-Cv.pdf"
+                            class="button button--flex button--ghost download__button">
                             Download CV<i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
@@ -540,7 +541,7 @@
         </section>
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
+        <section class="qualification section" id="qualifications">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
             <div class="qualification__container container">
@@ -647,7 +648,7 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent work</span>
 
-            <div class="portfolio__container container swiper-container">
+            <div class="portfolio__container container swiper">
                 <div class="swiper-wrapper">
                     <!--==================== PORTFOLIO 1 ====================-->
                     <div class="portfolio__content grid swiper-slide">
@@ -659,7 +660,7 @@
                                 You can find the code in my github.
                             </p>
                             <a href="https://gaming-shop-alaeddine.herokuapp.com/" target="_blank"
-                                class="button button--flex button--small portfolio__button">
+                                class="button button--flex button--small horiz__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -674,7 +675,7 @@
                             <p class="portfolio__description">Website adaptable to all devices.
                             </p>
                             <a href="https://young-plains-11318.herokuapp.com" target="_blank"
-                                class="button button--flex button--small portfolio__button">
+                                class="button button--flex button--small horiz__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -689,7 +690,7 @@
                             <p class="portfolio__description">A real-time video chat app using Webrtc.
                             </p>
                             <a href="https://cryptic-scrubland-00764.herokuapp.com" target="_blank"
-                                class="button button--flex button--small portfolio__button">
+                                class="button button--flex button--small horiz__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -725,7 +726,7 @@
                 </div>
             </div>
         </section>
-        -->
+-->
         <!--==================== CONTACT ME ====================-->
         <section class="contact  section" id="contact">
             <h2 class="section__title">Contact Me</h2>
@@ -745,7 +746,7 @@
                         <i class="uil uil-envelope contact__icon"></i>
                         <div>
                             <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">hamroun.alaeddine@yahoo.com</span>
+                            <span class="contact__subtitle">alaeddinehamroun.com</span>
 
                         </div>
                     </div>
@@ -775,7 +776,7 @@
                             placeholder="Write Your Message Here!"></input>
                     </div>
                     <div>
-                        <button type="submit" href="" class="button button--flex">
+                        <button type="submit" href="" class="button button--flex horiz__button">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
                         </button>
@@ -784,7 +785,7 @@
             </div>
         </section>
     </main>
-    
+
     <!--==================== FOOTER ====================-->
     <footer class="footer">
         <div class="footer__bg">
@@ -827,11 +828,15 @@
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
-    <!--==================== SWIPER JS ====================-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!--==================== SCROLL REVEAL ====================-->
+    <script src="assets/js/scrollreveal.min.js"></script>
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>

@@ -262,9 +262,29 @@ img {
 .home__social-icon {
   font-size: 1.25rem;
   color: var(--first-color);
+  background-color: var(--container-color);
+  padding: .25rem;
+  border-radius: .25rem;
+  display: flex;
+  transition: .3s;
 }
 .home__social-icon:hover {
-  color: var(--first-color-alt);
+  background-color: var(--first-color-alt);
+  color: #fff;
+}
+.home__social::before{
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: var(--first-color);
+  transform: rotate(90deg) translate(-10px, 3px);
+}
+.home__social::after{
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: var(--first-color);
+  transform: rotate(90deg) translate(10px, 3px);
 }
 .home__blob {
   width: 200px;
@@ -315,17 +335,25 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
   font-weight: var(--font-medium);
+  transition: 0.3s;
 }
 .button:hover {
   background-color: var(--first-color-alt);
+  color: #fff;
+
 }
 .button__icon {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
-  transition: 0.3s;
+
+}
+.button--ghost{
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
 }
 .button--white {
   background-color: #fff;
@@ -350,7 +378,10 @@ img {
   background-color: transparent;
   color: var(--first-color-alt);
 }
-
+.horiz__button:hover .button__icon {
+  transform: translateX(0.25rem);
+  transition: 0.3s;
+}
 /*==================== ABOUT ====================*/
 .about__img {
   width: 200px;
@@ -384,6 +415,12 @@ img {
   display: flex;
   justify-content: center;
 }
+
+.download__button:hover {
+  transform: translateY(0.25rem);
+  transition: 0.3s;
+}
+
 /*==================== SKILLS ====================*/
 .skills__container {
   row-gap: 0;
@@ -411,7 +448,7 @@ img {
 }
 .skills__arrow {
   margin-left: auto;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 .skills__list {
   row-gap: 1.5rem;
@@ -538,6 +575,7 @@ img {
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
 }
+
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
   display: flex;
@@ -599,9 +637,6 @@ img {
   color: var(--first-color);
 }
 /*==================== PORTFOLIO ====================*/
-.portfolio__container {
-  overflow: initial;
-}
 .portfolio__content {
   padding: 0 1.5rem;
 }
@@ -617,9 +652,6 @@ img {
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
 }
-.portfolio__button:hover .button__icon {
-  transform: translateX(0.25rem);
-}
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: "";
@@ -627,6 +659,11 @@ img {
 .swiper-portfolio-icon {
   font-size: 2rem;
   color: var(--first-color);
+  transition: 0.1s;
+}
+.swiper-portfolio-icon:hover {
+  font-size: 2.2rem;
+  color: #fff
 }
 .swiper-button-prev {
   left: -0.5rem;
@@ -644,6 +681,9 @@ img {
 .swiper-button-next,
 .swiper-pagination-bullet {
   outline: none;
+}
+.swiper-pagination{
+  position: initial;
 }
 /*==================== PROJECT IN MIND ====================*/
 .project {
@@ -1017,9 +1057,6 @@ img {
   }
   .home__social {
     transform: translateX(-6rem);
-  }
-  .services__container {
-    grid-template-columns: repeat(3, 238px);
   }
   .portfolio__content {
     column-gap: 5rem;
