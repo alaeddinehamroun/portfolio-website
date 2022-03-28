@@ -187,6 +187,6 @@ const fadeOutEffect = setInterval(() => {
     } else {
       clearInterval(fadeEffect);
     }
-  }, 00);
+  }, 300);
 
   window.addEventListener('load', fadeOutEffect);
