@@ -2,6 +2,7 @@
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
+    preloader = document.querySelector('.preloader');
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
@@ -176,3 +177,16 @@ const sr = ScrollReveal({
 sr.reveal('.home')
 sr.reveal('.about', {delay: 900, origin: 'bottom'})
 sr.reveal('.home__social, .home__scroll', {delay: 900, origin: 'bottom'})
+/*==================== LOADER ====================*/
+const fadeOutEffect = setInterval(() => {
+    if (!preloader.style.opacity) {
+      preloader.style.opacity = 1;
+    }
+    if (preloader.style.opacity > 0) {
+      preloader.style.opacity -= 0.1;
+    } else {
+      clearInterval(fadeEffect);
+    }
+  }, 00);
+
+  window.addEventListener('load', fadeOutEffect);
