@@ -2,7 +2,7 @@
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
-    preloader = document.querySelector('.preloader');
+preloader = document.querySelector('.preloader');
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
@@ -174,19 +174,26 @@ const sr = ScrollReveal({
     //reset: true,
 })
 //sr.reveal('.header', {delay: 100, origin: 'bottom'})
-sr.reveal('.home')
-sr.reveal('.about', {delay: 900, origin: 'bottom'})
-sr.reveal('.home__social, .home__scroll', {delay: 900, origin: 'bottom'})
-/*==================== LOADER ====================*/
-const fadeOutEffect = setInterval(() => {
-    if (!preloader.style.opacity) {
-      preloader.style.opacity = 1;
-    }
-    if (preloader.style.opacity > 0) {
-      preloader.style.opacity -= 0.1;
-    } else {
-      clearInterval(fadeEffect);
-    }
-  }, 300);
 
-  window.addEventListener('load', fadeOutEffect);
+/*==================== LOADER ====================*/
+// const fadeOutEffect = setInterval(() => {
+//     if (!preloader.style.opacity) {
+//         preloader.style.opacity = 1;
+//     }
+//     if (preloader.style.opacity > 0) {
+//         preloader.style.opacity -= 0.1;
+//     } else {
+//         clearInterval(fadeEffect);
+//     }
+// }, 500);
+// preloader.loadImage('myImg', './img.jpg');
+
+window.onload = function () {
+    setInterval(() => {
+        preloader.style.display = 'none'
+    }, 100)
+    sr.reveal('.home')
+    sr.reveal('.about', { delay: 900, origin: 'bottom' })
+    sr.reveal('.home__social, .home__scroll', { delay: 900, origin: 'bottom' })
+}
+  //window.addEventListener('load', fadeOutEffect);
