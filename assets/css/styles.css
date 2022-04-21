@@ -532,11 +532,15 @@ img {
 }
 
 .skills__flutter {
-  width: 60%;
+  width: 70%;
 }
 
 .skills__python {
   width: 80%;
+}
+
+.skills__r {
+  width: 50%;
 }
 
 .skills__matplotlib {
@@ -554,7 +558,18 @@ img {
 .skills__sl {
   width: 50%;
 }
-
+.skills__opencv {
+  width: 70%;
+}
+.skills__pytorch {
+  width: 50%;
+}
+.skills__keras {
+  width: 60%;
+}
+.skills__mediapipe {
+  width: 70%;
+}
 .skills__uml {
   width: 90%;
 }
@@ -567,7 +582,15 @@ img {
 .skills__cplusplus {
   width: 90%;
 }
-
+.skills__scrum {
+  width: 80%;
+}
+.skills__spring {
+  width: 80%;
+}
+.skills__figma {
+  width: 40%;
+}
 .skills__close .skills__list {
   height: 0;
   overflow: hidden;
@@ -667,7 +690,6 @@ img {
 }
 .swiper-portfolio-icon:hover {
   font-size: 2.2rem;
-  color: #fff;
 }
 .swiper-button-prev {
   left: -0.5rem;
@@ -1130,14 +1152,6 @@ img {
   }
 }
 
-
-
-
-
-
-
-
-
 @keyframes typing {
   0% {
     width: 0px;
@@ -1156,8 +1170,6 @@ img {
     border-color: var(--title-color);
   }
 }
-
-
 
 .typing {
   --typing-steps: 14;
