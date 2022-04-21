@@ -291,7 +291,7 @@ img {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 170px;
+  width: 83%;
 }
 .home__data {
   grid-column: 1/3;
@@ -382,7 +382,6 @@ img {
 }
 /*==================== ABOUT ====================*/
 .about__img {
-  width: 200px;
   border-radius: 0.5rem;
   justify-self: center;
   align-self: center;
