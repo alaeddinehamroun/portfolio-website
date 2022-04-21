@@ -157,17 +157,6 @@ const sr = ScrollReveal({
 //sr.reveal('.header', {delay: 100, origin: 'bottom'})
 
 /*==================== LOADER ====================*/
-// const fadeOutEffect = setInterval(() => {
-//     if (!preloader.style.opacity) {
-//         preloader.style.opacity = 1;
-//     }
-//     if (preloader.style.opacity > 0) {
-//         preloader.style.opacity -= 0.1;
-//     } else {
-//         clearInterval(fadeEffect);
-//     }
-// }, 500);
-// preloader.loadImage('myImg', './img.jpg');
 
 window.onload = function () {
     setInterval(() => {
@@ -176,5 +165,6 @@ window.onload = function () {
     sr.reveal('.home')
     sr.reveal('.about', { delay: 900, origin: 'bottom' })
     sr.reveal('.home__social, .home__scroll', { delay: 900, origin: 'bottom' })
+    // sr.reveal('.header', {delay: 100, origin: 'bottom'})
+
 }
-  //window.addEventListener('load', fadeOutEffect);
